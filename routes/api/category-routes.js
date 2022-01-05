@@ -24,7 +24,7 @@ router.get('/:id', async (req, res) => {
       },
       // JOIN with products, using the productTag through table
       // be sure to include its associated Products
-      include: [{model: Product, through: ProductTag}]
+      include: [Product]
     });
 
     if (!categoryData) {
