@@ -29,23 +29,24 @@ router.get('/:id', async (req, res) => {
       return;
     };
 
-    res.status(200).json(categoryData);
+    res.status(200).json(productData);
 
   } catch (err) {
-    res.status(500).json(err);
+    console.log(err);
+    res.status(500).json(err.message);
   }
 });
 
 // create new product
 router.post('/', (req, res) => {
 
-  req.body = {
-    product_name: req.body.product_name,
-    price: req.body.price,
-    stock: req.body.stock,
-    category_id: req.body.category_id,
-  };
-  
+  // req.body = {
+  //   product_name: req.body.product_name,
+  //   price: req.body.price,
+  //   stock: req.body.stock,
+  //   category_id: req.body.category_id,
+  // };
+  console.log(req.body);
   Product.create(req.body)
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
