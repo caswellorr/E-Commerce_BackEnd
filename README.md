@@ -1,35 +1,32 @@
 # 🏗️ E-Commerce Back End
 
-Link : 
+Link : https://nameless-castle-62595.herokuapp.com/
 
 ## Description 📖
 
-This application is an e-commerce back end.
+This project is an Internet retail application, also known as **e-commerce**. It is the back end for an e-commerce site.
 
 ## Features 📝
 
-The application uses an
+The application uses a working Express.js API to use Sequelize to interact with a MySQL database.
 
 ## Screenshots 📷 :
 
-* User is presented with a landing page:
+* Example of a route getting all category data:
 
   ![alt text](./Assets/screenshot1.png)
   
-* User can add a note and save it to the application:
+* Example of a route updating a single category by id:
 
   ![alt text](./Assets/screenshot2.png)
 
-* User can click on an existing note and display it in the right column:
+* Example of a route getting all product data:
 
   ![alt text](./Assets/screenshot3.png)
   
 
 ## Takeaways 💡
 
- I learned how to employ node modules to connect the front and back ends of an application, including Express.js and fs.
-
-I also learned how to employ http methods to retrieve data from a database, as well as post and delete that data.
-
+I learned how to configure a working Express.js API to interact with a MySql database using Sequelize.
 ----
 © 2021 Caswell Orr. Confidential and Proprietary. All Rights Reserved.
